@@ -101,7 +101,9 @@ class MyApp extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
-                SizedBox(height: 30,),
+                SizedBox(
+                  height: 30,
+                ),
                 Padding(
                   padding: const EdgeInsets.all(30.0),
                   child: Row(
@@ -141,7 +143,60 @@ class MyApp extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
+
+                // third screen
+
+                Center(
+                  child: Image.asset(
+                    "assets/space3.png",
+                    height: 300,
+                    scale: 2,
+                  ),
+                ),
+                const Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Center(
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: const Text(
+                        "Space Details",
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ),
+                  ),
+                ),
+
+                //footer
+                const SizedBox(
+                  height: 30,
+                ),
+                Container(
+                  height: 2,
+                  width: 500,
+                  decoration: const BoxDecoration(color: Colors.white30),
+                ),
+                const Text(
+                  "Back Hole",
+                  style: TextStyle(color: Colors.white, fontSize: 40),
+                ),
+               const SizedBox(height: 20,),
+                const Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
               ],
             ),
           ),
